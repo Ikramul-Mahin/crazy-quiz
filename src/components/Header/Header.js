@@ -1,3 +1,5 @@
+import { faBookJournalWhills, faBookSkull } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -14,13 +16,13 @@ const Header = () => {
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li> <Link to='/home'>Home</Link></li>
                             <li> <Link to='/blog'>Blog</Link>  </li>
-                            <li> <Link to='/about'>About</Link> </li>
+                            <li> <Link to='/about'>Contact</Link> </li>
                             <li>  <Link to='/statics'>Statics</Link></li>
 
 
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl"> <p>Quiz|For|Coders</p></a>
+                    <a className="btn btn-ghost normal-case text-xl"> <FontAwesomeIcon icon={faBookJournalWhills} /> <p>Quiz|For|Coders</p></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
