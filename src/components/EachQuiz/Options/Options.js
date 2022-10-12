@@ -1,19 +1,19 @@
 import React from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
-const Options = ({ option, viewSelect }) => {
-    const notify = () => toast.success('Here is your toast.', { autoclose: 600 });
+const Options = ({ option }) => {
+    const notify = () => toast.success('Option Selected!', { autoclose: 600 });
 
 
     return (
         <div className='grid grid-cols-2'>
             <div className='flex'>
-                <div className='mr-6'>
+                <div className='mr-6 font-bold'>
                     <button onClick={notify}><input type="radio" /></button>
                     <Toaster />
 
                 </div>
-                <div>
+                <div className='font-bold  '>
                     {option}
                 </div>
             </div>

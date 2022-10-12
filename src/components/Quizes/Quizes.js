@@ -7,8 +7,8 @@ const Quizes = () => {
     const allQuestios = category.data.questions
     console.log(console.log(allQuestios))
     return (
-        <div>
-            <h2 className='text-2xl underline'>Questions {category.data.name}</h2>
+        <div className='mt-5'>
+            <h2 className='text-2xl font-semibold underline'> {category.data.name}  Questions</h2>
             <div>
                 {
                     allQuestios.map(questions => <EachQuiz questions={questions} key={questions.id}></EachQuiz>)

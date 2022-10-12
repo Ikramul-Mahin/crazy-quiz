@@ -35,7 +35,7 @@ const Header = () => {
 
             </div>
 
-
+            <hr />
         </div>
     );
 };
