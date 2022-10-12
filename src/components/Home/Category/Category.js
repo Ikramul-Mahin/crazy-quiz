@@ -13,12 +13,12 @@ const Category = ({ category }) => {
 
             <div className="card w-96 glass">
                 <figure><img src={logo} alt="car!" /></figure>
-                <div className="card-body flex">
-                    <div className='text-center'>  <h2 className="card-title text-2xl">{name}</h2> </div>
+                <div className="card-body text-left">
+                    <div className=''>  <h2 className="card-title text-2xl">{name}</h2> </div>
                     <div>  <h2 className='text-xl'>Total-Quiz:{total}</h2></div>
                 </div>
-                <div className='card-actions w-full'>
-                    <button className='btn btn-primary w-full'> <p> <Link to={`/home/${id}`}>{name}</Link></p> </button>
+                <div className='card-actions w-full ml-8'>
+                    <button className='btn btn-primary '> <p> <Link to={`/home/${id}`}>{name}</Link></p> </button>
                 </div>
             </div>
 

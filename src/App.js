@@ -14,9 +14,9 @@ function App() {
       path: '/',
       element: <Layouts></Layouts>,
       children: [
-        { path: '/', element: <Home></Home> },
+        // { path: '/', element: <Home></Home> },
         {
-          path: 'home',
+          path: '/home',
           loader: async () => {
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
