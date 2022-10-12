@@ -32,7 +32,14 @@ function App() {
         },
         { path: 'blog', element: <Blog></Blog> },
         { path: 'statics', element: <Statics></Statics> },
-        { path: 'about', element: <About></About> }
+        { path: 'contact', element: <About></About> },
+        {
+          path: '*',
+          element:
+            <div className='mt-36 mb-40'>
+              <h1 className='text-4xl font-extrabold'>404 Not Found!!</h1>
+            </div>
+        }
       ]
     }
 
