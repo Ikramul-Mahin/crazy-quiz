@@ -6,9 +6,6 @@ import Category from './Category/Category';
 const Home = () => {
     const quizCategories = useLoaderData()
     const categories = quizCategories.data
-    const moveToQuiz = () => {
-        console.log('clicked')
-    }
 
     return (
         <div>
@@ -23,7 +20,7 @@ const Home = () => {
                     categories.map(category => <Category
                         category={category}
                         key={category.id}
-                        moveToQuiz={moveToQuiz}
+
                     ></Category>)
                 }
             </div>
